@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../partials/head %>
+</head>
+<body>
+  <% include ../partials/header %>
+  <main>
+    <div class="section blue darken-1" id="index-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h1 class="header center">The Parsha Project</h1>
+          </div>
+          <div class="col s12">
+            <h3 class="header center" id="home-banner">Read the weekly Torah portion!</h3>
+          </div>
+          <div class="col s12">
+            <form class="header center" id="read-parsha" action="/parsha" method="get" target="_top">
+                <button class="btn-large waves-effect waves-light blue lighten-2" type="submit" alt="Parsha of the Week">Parsha of the Week - <%= current%></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row no-bottom-margin add-top-margin">
+      <div class="col s12 center">
+        <div class="addthis_inline_share_toolbox"></div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <p class="flow-text"><span class="question">What is the Parsha Project?</span></p><p class="flow-text">The Parsha Project is an endeavor to increase Bible literacy in the Jewish community through the traditional weekly Torah readings.  We believe the best way to connect with the traditions and faith of our ancestors is to read the scriptures themselves... Not just commentary on the scriptures! The Parsha Project was started by <a href="http://trank.org">Aaron Trank</a>, and is a continuation of an earlier creative project called <a href="https://www.youtube.com/user/TrankBros">"Parsha in 60 seconds"</a> in which <a href="https://seantrank.wordpress.com/">Sean Trank</a> created explainer videos for each of the Torah portions.  The Parsha Project was started in honor of Sean Trank who died of lung cancer in 2014.</p>
+          <p class="flow-text"><span class="question">But what's a "Parsha" anyway?</span></p><p class="flow-text">The first five books of the Bible are called the Torah.  These books are sometimes refered to as the "Books of Moses" or the Pentateuch.  The Torah includes Genesis, Exodus, Leviticus, Numbers and Deuteronomy.  The Torah is divided into weekly readings based on the Jewish calendar.  These readings are called "Parshas" (or more accurately "Parashas") and they repeat each year. </p>
+          <p class="flow-text"><span class="question">Why should you read the Parsha?</span></p><p class="flow-text">Whether you are Jewish or Christian, the Torah is the foundation of your faith community.  The Torah is the story of God's creation of and interaction with the world and humanity.  We believe that the Torah has a lot to say to us today!  Whether you believe the Torah to literally be God's words, or simply Jewish mythology, the beauty and wisdom of the book is self-evident. We hope you are blessed in the reading of Torah!</p>
+          <p class="flow-text"><span class="question">What version of the Bible does the Parsha Project use?</span></p><p class="flow-text">The Parsha Project utilizes the <a hre="https://worldenglishbible.org/">"World English Bible" (WEB)</a> translation of the Torah.  This is a Public Domain and modern translation of the Bible.  We made one significant modification to the text of WEB translation in the use of God's name.  In the WEB translation God's name is rendered as "Yahweh", but out of respect for God's name, we have replaced all references to "Yahweh" with "The LORD" (with capitalization of the 'T' in "the" and each letter of "lord").</p>
+          <p class="flow-text"><span class="question">How can I keep up with the reading?</span></p><p class="flow-text">Obviously you can visit this website whenever you'd like, but to make it a bit more convenient, we'd recommend that you subscribe to receive the weekly Parsha in your email!  This way you can stay up to date (even if you miss a few weeks).  Don't worry, you can unsubscribe at any time!  To sign up, type your email address in the form labeled "Get the weekly Parsha!" and then check your email to confirm your subscription.</p>
+          <p class="flow-text"><span class="question">I've got questions about the Bible, what should I do?</span></p><p class="flow-text">You've got questions?  Great!  We'd love to help.  Feel free to contact us through facebook, twitter, or email (see the connect options at the bottom of this page)</p>
+        </div>
+      </div>
+    </div>
+    <!--<div class="home-main" style="background-image: url('/res/torah.jpg')">
+      <p>Read the weekly Torah portion!</p>
+    </div>-->
+  </main>
+  <% include ../partials/footer %>
+  <% include ../partials/bodyscripts %>
+</body>
+</html>

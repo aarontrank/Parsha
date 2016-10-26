@@ -1,0 +1,30 @@
+<header>
+
+  <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a></div>
+  <ul id="nav-mobile" class="side-nav fixed">
+    <li class="logo"><a id="logo-container" href="http://parsha.co" class="brand-logo">
+        <object id="front-page-logo" type="image/svg+xml" data="/res/parsha.svg">The Parsha Project</object></a>
+    </li>
+    <li class="search">
+      <div class="search-wrapper card">
+        <!-- <form action="//aarontrank.us2.list-manage.com/subscribe/post?u=6a4c3e74f684d4ed9931a79bf&amp;id=3d4df03079" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" > -->
+        <input id="search" name="EMAIL" placeholder="Get the weekly Parsha!"><i class="material-icons">email</i>
+      <!-- </form> -->
+        <div class="search-results"></div>
+      </div>
+    </li>
+    <li class="bold"><a href="/parsha" class="waves-effect ">Parsha of the Week - <span class="list-reference"><%= current%></span></a></li>
+    <ul class="collapsible collapsible-accordion">
+      <li class="bold"><a class="collapsible-header  waves-effect ">Full Parsha List</a>
+        <div class="collapsible-body">
+          <ul>
+            <% parshas.forEach((item)=>{
+              %><li><a href="/parsha/<%= item[0] %>"><%= item[1] %> - <span class="list-reference"><%= item[2]%></span></a></li><%
+            });%>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <li class="bold"><a href="https://www.patreon.com/parshaproject" class="waves-effect ">Support this project!</a></li>
+  </ul>
+</header>
