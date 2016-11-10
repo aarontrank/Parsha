@@ -21,6 +21,8 @@ app.get('/' , (request,response)=>{
   if (currentParshaName in parshalist) {
     console.log(`${parshalist[currentParshaName].text}`);
     response.render('./pages/home.ejs', {"current": parshaName, "parsha": currentParshaName, "parshas": parshalist.parshas, "display": parshalist[currentParshaName].display, "video" : parshalist[currentParshaName].video, "text" : parshalist[currentParshaName].text});
+  } else {
+    console.log("Parsha NOT in Parsha List!!");
   }
 });
 

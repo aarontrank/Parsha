@@ -10,7 +10,7 @@
 let parshalist = () => { return {
   "parshas" : [["bereshit","Bereshit","Genesis 1:1-6:8"],
   ["noach","Noach","Genesis 6:9-11:32"],
-  ["lechlecha","Lech-Lecha","Genesis 12:1-17:27"],
+  ["lech-lecha","Lech-Lecha","Genesis 12:1-17:27"],
   ["vayera","Vayera","Genesis 18:1-22:24"],
   ["chayeisara","Chayei Sara","Genesis 23:1-25:18"],
   ["toldot","Toldot","Genesis 25:19-28:9"],
@@ -72,7 +72,7 @@ let parshalist = () => { return {
     "video" : "https://www.youtube.com/embed/-zL5QBeUy34",
     "text" : "Genesis 6:9-11:32"
   },
-  "lechlecha" :{
+  "lech-lecha" :{
     "display" : "Lech-Lecha",
     "video": "https://www.youtube.com/embed/0GseHYTbzFo",
     "text" : "Genesis 12:1-17:27"
